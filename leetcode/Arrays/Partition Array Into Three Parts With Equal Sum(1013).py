@@ -1,5 +1,6 @@
 class Solution:
     def canThreePartsEqualSum(arr):
+      print(arr.sort())
       s = sum(arr)/3
       if s==int(s):
         c = 0
@@ -11,6 +12,7 @@ class Solution:
             c+=1
           if c==3:return True
       return False
+
     print(canThreePartsEqualSum([0,2,1,-6,6,-7,9,1,2,0,1]))
     print(canThreePartsEqualSum([0,2,1,-6,6,7,9,-1,2,0,1]))
     print(canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]))

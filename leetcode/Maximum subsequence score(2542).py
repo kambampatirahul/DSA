@@ -1,3 +1,6 @@
+import heapq
+
+
 class Solution:
     def maxScore(nums1, nums2, k):
         h = []
